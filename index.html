@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迷宫</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="initialization">
+        <p>
+            <label for="width">输入迷宫的宽度（格子数,建议大于70）</label>
+            <input type="text" id="width" style="color: #999;" value="格子数不超过80" onblur="if(this.value == ''){this.value = '格子数不超过80';this.style.color = '#999'}" onfocus="if(this.value == '格子数不超过80'){this.value = '';this.style.color = '#000'}">
+        </p>
+        <p>
+            <label for="height">输入迷宫的高度（格子数，建议大于40）</label>
+            <input type="text" id="heigth" style="color: #999;" value="格子数不超过55" onblur="if(this.value == ''){this.value = '格子数不超过55';this.style.color = '#999'}" onfocus="if(this.value == '格子数不超过55'){this.value = '';this.style.color = '#000'}">
+        </p>
+    </div>
+
+    <div id="btn-wrapper">
+        <button id="create">生成迷宫</button>
+        <button id="auto">自动寻路</button>
+    </div>
+
+    <div class="maze-wrapper">
+        <div id="maze"></div>
+    </div>
+
+    <div class="tips">aaa</div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
